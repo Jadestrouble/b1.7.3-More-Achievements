@@ -22,10 +22,8 @@ public class AchievementListener {
     @EventListener
     public void registerAchievements(AchievementRegisterEvent event) {
         List<Achievement> list = event.achievements;
-        AchievementPage achievementPage = new ExampleAchievementPage(modID, "examplemod");
-        achievement = new Achievement(69696969, "examplemod.boned", -1, 0, ItemBase.bone, null);
-        achievement2 = new Achievement(69696970, "examplemod.apple", 0, 10, ItemBase.apple, achievement);
-        achievement2.setUnusual();
+        AchievementPage achievementPage = new ExampleAchievementPage(modID, "moreachivements");
+        achievement = new Achievement(69696969, "moreachivements.diamonds", -1, 0, ItemBase.diamond, null);
         list.add(achievement);
         list.add(achievement2);
         achievementPage.addAchievements(achievement, achievement2);
